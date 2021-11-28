@@ -1,0 +1,11 @@
+CREATE "biblioteca"("author":"Miguel")
+TRUNCATE "biblioteca"
+ALTER "biblioteca" ADD("title":"Hotel 2021")
+ALTER "biblioteca" ADD("title":"Sombras Nocturnas")
+
+RENAME "biblioteca" TO "library"
+SELECT "title" FROM "library"
+INSERT INTO "library"("title") VALUES("Precious Days")
+UPDATE "library" SET "title" = "Night Shadow" WHERE "title" ="Sombras Nocturnas"
+DELETE FROM "library" WHERE "title" = "Hotel 2021"
+DROP "library"
